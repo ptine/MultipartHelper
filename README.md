@@ -11,8 +11,8 @@ string filePath = "/MyStorage/MySubdir/myfilename.jpg";<br>
 string fileName = filepath.substring(filepath.lastIndexOf("/")+1);<br>
 <br>
 MultipartHelper  multipart = new MultipartHelper (requestURL, charset);<br>
-multipart.addFormField("myFormFieldName1", "foo");<br>
-multipart.addFormField("myFormFieldName2", "bar");<br>
-multipart.addFormField("file", fileName);<br>
-multipart.addFilePart("file", new File(filePath));<br>
+multipart.setFormField("myFormFieldName1", "foo");<br>
+multipart.setFormField("myFormFieldName2", "bar");<br>
+multipart.setFormField("file", fileName);<br>
+multipart.setFilePart("file", new File(filePath));<br>
 String response = multipart.finish();<br>
