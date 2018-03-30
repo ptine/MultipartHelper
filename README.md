@@ -15,4 +15,4 @@ multipart.setFormField("myFormFieldName1", "foo");<br>
 multipart.setFormField("myFormFieldName2", "bar");<br>
 multipart.setFormField("file", fileName);<br>
 multipart.setFilePart("file", new File(filePath));<br>
-String response = multipart.finish();<br>
+String response = multipart.getResponse();<br>
