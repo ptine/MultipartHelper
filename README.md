@@ -10,7 +10,7 @@ String requestURL = "www.example.com/upload?myId=12312";<br>
 string filePath = "/MyStorage/MySubdir/myfilename.jpg";<br>
 string fileName = filepath.substring(filepath.lastIndexOf("/")+1);<br>
 <br>
-MultipartUtility multipart = new MultipartUtility(requestURL, charset);<br>
+MultipartHelper  multipart = new MultipartHelper (requestURL, charset);<br>
 multipart.addFormField("myFormFieldName1", "foo");<br>
 multipart.addFormField("myFormFieldName2", "bar");<br>
 multipart.addFormField("file", fileName);<br>
