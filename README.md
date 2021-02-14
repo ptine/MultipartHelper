@@ -16,3 +16,5 @@ multipart.setFormField("myFormFieldName2", "bar");<br>
 multipart.setFormField("file", fileName);<br>
 multipart.setFilePart("file", new File(filePath));<br>
 String response = multipart.getResponse();<br>
+
+Full article [here](https://www.paolotine.it/ottenere-nome-del-file-un-url-download-android/)
